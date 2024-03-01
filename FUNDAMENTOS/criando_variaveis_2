@@ -1,0 +1,12 @@
+
+let nome = "Playstation";
+let categoria = "Jogos";
+let preco = 1200.00;
+let aliquota = 0.15;
+let imposto = preco - (preco * aliquota);
+let precofinal = preco - imposto;
+
+console.log("Produto: " + nome
+       + ", Categoria: " + categoria
+       + ", Preço: " + preco);
+

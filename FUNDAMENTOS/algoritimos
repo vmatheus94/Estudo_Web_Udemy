@@ -1,0 +1,19 @@
+//Basico Algoritimos
+
+{
+let notadaprova = 5.5;
+let pontoextra = 1;
+let notafinal = notadaprova + pontoextra;
+let aprovado = false;
+
+if (notadaprova >= 7) {
+ aprovado = True
+};  
+if (aprovado) {
+ console.log('Aprovado!') 
+} else { if (notafinal >= 7) {
+ console.log('Reprovado!')  }  
+}
+   
+}
+

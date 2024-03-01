@@ -1,0 +1,25 @@
+//array é uma estrutura indexavel, voce acessa suas informações a partir do index do elemento
+//a separação dos elementos é feito através da virgula
+//array não pode ser mudado dentro do codigo, uma vez definido só terá aqueles itens
+
+const valores = [7.7, 8.9, 6.3, 9.2]
+console.log(valores[0], valores[3])
+
+console.log(valores[5]) //acessar um elemento que não existe, retorna um valor undefined
+
+//voce pode adicionar um valor ao array, chamando diretamente um index
+valores[4] = 6.8
+console.log(valores[4])
+
+console.log(valores.length) //mostra quantos itens tem o array
+
+//função push adiciona elementos de qualquer tipo ao array
+valores.push({id: 3}, false, null, 'teste', 0)
+console.log(valores)
+
+//função pop retira o ultimo valor do array
+console.log(valores.pop())
+
+//função delete, exclui um item do array
+delete valores[2]
+console.log(valores)

@@ -1,0 +1,29 @@
+const prod1 = {}
+
+//atribuindo valores para o objeto
+prod1.nome = 'Celular Samsung'
+prod1.preco = 2499.99
+console.log(prod1)
+
+//um objeto é um conjuto de chave e valor
+
+
+//criando um objeto com valores na constante
+const prod2 = {
+  nome: 'TV Led',
+  preco: 3552.99
+}
+console.log(prod2)
+
+//Criando objetos dentro de objetos
+const prod3 = {
+    nome: 'TV Led',
+    preco: 3552.99,
+    especificacoes: {
+            tipo: 'smart',
+            categaoria: 'eletro'
+        }
+   }
+  console.log(prod3)  
+
+//OBJETO É DIFERENTE DE JSON

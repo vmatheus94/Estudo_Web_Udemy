@@ -1,0 +1,17 @@
+const escola = "Soi muy loco"
+
+//retorna o caractere referente o index que voce seleciona 
+console.log(escola.charAt(0))
+
+//retorna os caracteres a partir de um index que voce seleciona
+//ou dentro de um intervalo de indexes, passando o index inicial e final
+//funciona como a função Lengh no delphi
+console.log(escola.substring(4))
+console.log(escola.substring(0,6))
+
+//função para concatenar informações
+console.log('Ele és '.concat(escola.substring(4)))
+
+//função para substituir caracteres
+console.log(escola.replace('y', 'g'))
+

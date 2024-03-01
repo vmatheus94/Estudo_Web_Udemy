@@ -1,0 +1,13 @@
+let idade = 31;
+console.log(typeof idade);
+
+/*
+no javascript qualquer numero é do 
+tipo number
+*/
+
+let nome = "Carlos";
+console.log(typeof nome);
+
+let MaiorDeIdade = true;
+console.log(typeof MaiorDeIdade);

@@ -1,0 +1,12 @@
+let quantidade = 10;
+let preco = 1000.00;
+let aliquota = 1.5;
+let imposto = preco - (preco * aliquota);
+let precofinal = preco - imposto;
+
+console.log("Caneta");
+console.log(quantidade);
+console.log(preco);
+console.log(imposto);
+console.log(precofinal);
+

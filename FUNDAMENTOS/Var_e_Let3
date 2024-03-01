@@ -1,0 +1,31 @@
+for (let i = 0; i < 10; i++) {
+    console.log(i)
+}
+
+//se usar var dentro do loop ele ainda é visivel 
+//fora do loop, se usar let, ele só é visivel dentro do bloco
+
+const funcs = []
+
+for (var i = 0; i < 10; i++) {
+    funcs.push(function(){
+        console.log(i)
+    })
+}
+funcs[2]()
+funcs[8]()
+
+//se usar var no momento que chama a funcao, os indices trarão um
+//resultado errado, pois ele nao consegue entender a variavel global
+
+const funcss = []
+
+for (let i = 0; i < 10; i++) {
+    funcss.push(function(){
+        console.log(i)
+    })
+}
+funcss[2]()
+funcss[8]()
+
+//usando let o indice retorna correto pois ela nao é uma variavel global

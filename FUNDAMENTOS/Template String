@@ -1,0 +1,19 @@
+const nome = 'Matheus'
+const concatenacao = 'Hello ' + nome + '!'
+
+//ao usar a crase o texto será mostrado respeitando a quabra de linha
+//e voce pode chamar funções, cariaveis ou constantes dentro do ${}
+const template = `
+ Eai 
+ ${nome}?`
+
+console.log(template)
+
+//essa é uma concatenação simples para comparação
+console.log(concatenacao)
+
+//o que voce colocar entre as chaves será transformado para string
+//se estiver entre crases
+console.log(`você conhece o ${nome}?`)
+console.log(`eu conheço ${1+3} ${nome}!`)
+

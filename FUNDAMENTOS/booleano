@@ -1,0 +1,36 @@
+let isAtivo = false //literal
+
+/*colocando ! ou !! antes de qualquer variavel ou constante
+voce transforma ela em booleana. Colocando uma exclamação ! voce nega a primeira informação dada a ela
+colocando duas exclamações !! voce volta ela para o valor booleano original */
+console.log(!isAtivo)
+console.log(!!isAtivo)
+
+/*as expressões que são verdadeiras por default*/
+console.log(!!3) //qualquer numero inteiro, com exceção do zero
+console.log(!!-1) //numeros negativos
+console.log(!!' ') //um texto ou espaço vazio
+console.log(!![]) //um array preenchido ou vazio
+console.log(!!{}) //um objeto literal preenchido ou vazio
+console.log(!!Infinity) //qualquer infinito, por exemplo uma divisão por zero
+console.log(!!(isAtivo = 1 + 1)) //o resultado da atribuição é verdadeiro, por exemplo 1 + 1, apenas o resultado da atribuição é considerado, ou seja "2" é verdadeiro
+
+/*as expressões que são falsas por default*/
+console.log(!!0) //zero é falso
+console.log(!!'') //qualquer string vazia, se tiver um espaço é considerado string preenchida
+console.log(!!null) //valor nulo
+console.log(!!NaN) //not a number
+console.log(!!undefined) //indefinido
+console.log(!!(isAtivo = 1 - 1)) //o resultado da atribuição se for falso entao a variavel é falsa, ou seja resultado é "0" e zero é falso
+
+//expressão exemplo
+/* o || quer dizer 'ou', então ele verifica se alguma das expressões entre as barras é verdadeiras 
+se houver verdadeira, ele defini a função como verdadeira*/
+console.log(!!('' || Infinity || 0 || 2))
+
+//expressão pratica
+/*se a primeira expressão é falsa ele retorna a segunda, que é verdadeira, se a primeira é verdadeir, 
+ele retorna a primeira ignorando a segunda*/
+
+let nome = '' //essa expressão é falsa, pois uma string vazia é um valor falso 
+console.log(nome || 'nome não cadastrado, preencha e tente novamente')

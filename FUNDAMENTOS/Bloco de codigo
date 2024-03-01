@@ -1,0 +1,9 @@
+{
+
+if ((10 + 12) > (15 - 20)) {
+ console.log("Verdadeiro");   
+} else {
+ console.log("Falso");   
+}
+}
+
